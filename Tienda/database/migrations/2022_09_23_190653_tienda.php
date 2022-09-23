@@ -14,10 +14,10 @@ class Tienda extends Migration
     public function up()
     {
         //
-        Schema::create('tienda', function (Blueprint $table) {
+        Schema::create('tiendas', function (Blueprint $table) {
 
             $table->engine="InnoDB";
-            $table->increments('id_tienda');
+            $table->bigIncrements('id_tienda');
             $table->string('nombre_tienda');
             $table->date('fecha_apertura_tienda');
 
